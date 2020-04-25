@@ -22,7 +22,7 @@
         <MyFooter/>
     </div>
     <div class="live2d-wrapper">
-      <l2d />
+      <!-- <l2d /> -->
     </div>
   </div>
 </template>

@@ -1,4 +1,4 @@
-import live2d from 'live2d-vue'
+// import live2d from 'live2d-vue'
 
 export default ({
     Vue,
@@ -6,5 +6,5 @@ export default ({
     router,
     siteData
 }) => {
-    Vue.use(live2d)
+    // Vue.use(live2d)
 }
