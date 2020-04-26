@@ -22,7 +22,7 @@
         <MyFooter/>
     </div>
     <div class="live2d-wrapper">
-      <!-- <l2d /> -->
+      <l2d />
     </div>
   </div>
 </template>
@@ -65,12 +65,12 @@ export default {
         }
         else if(this.isMobileHeaderOpen && window_width > 840){
           this.isMobileHeaderOpen = false;
-        }
-        
-      }
+        }   
+      },
   },  
 
   mounted() {
+    console.log("mounted is called");
     window.addEventListener('resize', this.onResize)
     this.onResize();
     this.$router.afterEach(() => {
@@ -162,6 +162,7 @@ $thres_max = 1250px
     position fixed 
     bottom 0
     right 0
+    z-index 99
     @media (max-width: $thres_min)
       display none
 
